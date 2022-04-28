@@ -13,13 +13,13 @@ const Navbar = () => {
                     <div className='flex items-center h-20 w-full'>
                         <div className='flex items-center sm:mx-10 md:mx-20 justify-between w-full'>
                             <div className='flex justify-center items-center flex-shrink-0'>
-                                <h1 className=''>
+                                <h1 className='font-extrabold text-xl ml-5'>
                                     Antons Portfolio
                                 </h1>
                             </div>
                             <div className='hidden md:block'>
                                 <div className='ml-10 flex items-baseline space-x-4'>
-                                    <Link href="#" activeClass="Home" smooth={true} offset={50} duration={500} className="cursor-pointer text-blue-600 px-3 py-2 text-md">Home</Link>
+                                    <Link href="#" className="cursor-pointer text-blue-600 px-3 py-2 text-md">Home</Link>
                                     <Link href="#" className="hover:text-blue-500 active:text-blue-500">Services</Link>
                                     <Link href="#" className="hover:text-blue-500 active:text-blue-500">Projects</Link>
                                     <Link href="#" className="hover:text-blue-500 active:text-blue-500">Contact Me</Link>
@@ -34,7 +34,7 @@ const Navbar = () => {
                         <div className='mr-14 flex md:hidden'>
                             <button onClick={() => setIsOPen(!isOpen)} className='bg-blue-500 inline-flex items-center justify-center p-2 rounded-md text-white hover:bg-black focus:outline-none focus:ring-white ' aria-controls='mobile-menu' aria-expanded="false" type='button'>
                                 <span className='sr-only'>Open main menu</span>
-                                {!isOpen ? (<MenuIcon className='w-5 h-5' />) : (<XIcon className='w-5 h-5' />)}
+                                {!isOpen ? (<MenuIcon className='w-5 h-5 ' />) : (<XIcon className='w-5 h-5' />)}
                             </button>
                         </div>
                     </div>
